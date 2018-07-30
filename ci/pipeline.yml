@@ -118,6 +118,7 @@ resources:
     access_key_id: {{s3-access-key-id}}
     secret_access_key: {{s3-secret-access-key}}
     endpoint: {{s3-endpoint}}
+    region_name: {{s3-region}}
 
 - name: candidate-release
   type: s3
@@ -127,6 +128,7 @@ resources:
     access_key_id: {{s3-access-key-id}}
     secret_access_key: {{s3-secret-access-key}}
     endpoint: {{s3-endpoint}}
+    region_name: {{s3-region}}
 
 - name: final-release
   type: s3
@@ -136,6 +138,7 @@ resources:
     access_key_id: {{s3-access-key-id}}
     secret_access_key: {{s3-secret-access-key}}
     endpoint: {{s3-endpoint}}
+    region_name: {{s3-region}}
 
 - name: cf
   type: cf

@@ -3,17 +3,19 @@ github-branch: master
 s3-access-key-id: SAMPLEDF99FSWEBF9DW9  # AWS or S3 compatible access key id
 s3-secret-access-key: sampleaxfdpiA98FG8u7ahd08Sdgf8AFG8gh8S0F  # AWS or S3 compatible secret access key
 s3-endpoint: s3.amazonaws.com
+s3-region: us-east-1
 s3-bucket-version: pcfdemo-releases  # Create and change this to your own S3 bucket
 s3-bucket-releases: pcfdemo-releases  # Create and change this to your own S3 bucket
 s3-bucket-release-candidates: pcfdemo-release-candidates  # Create and change this to your own S3 bucket
 maven-opts: # -Xms256m -Xmx512m
 maven-config: # -s path/to/settings.xml
-cf-api: https://api.local.micropcf.io  # Change the following to match your Cloud Foundry environment
-cf-skip-ssl: true
-cf-username: admin
-cf-password: admin
-cf-org: micropcf-org
-cf-space: micropcf-space
-cf-manifest-host: pcfdemo-ci
+cf-api-url: https://api.run.pivotal.io  # Change the following to match your Cloud Foundry environment
+cf-skip-ssl: false
+cf-username: someuser
+cf-password: somepassword
+cf-org: someuser-org
+cf-space: someuser-space
+cf-app-name: pcfdemo
+cf-app-host: pcfdemo # Rename if this subdomain is already taken: pcfdemo.cfapps.io
 cf-mq-service-name: pcfdemo-mq
 cf-mq-service-params: p-rabbitmq standard pcfdemo-mq
