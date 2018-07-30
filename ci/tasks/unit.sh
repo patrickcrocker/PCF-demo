@@ -2,6 +2,6 @@
 
 set -e
 
-pushd pcfdemo
+cd pcfdemo
   ./mvnw clean test
-popd
+cd ..
