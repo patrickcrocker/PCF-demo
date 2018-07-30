@@ -1,4 +1,4 @@
-#!/bin/ash
+#!/bin/bash
 #
 # All CF_* variables are provided externally from this script
 
